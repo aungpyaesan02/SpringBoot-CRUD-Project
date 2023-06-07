@@ -1,0 +1,102 @@
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Background color */
+body {
+  background-color: #007bff; /* Sea blue */
+}
+
+/* Fonts */
+h2 {
+  font-family: "Roboto", sans-serif; /* Replace with your preferred cool font */
+}
+
+/* Popular layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+/* Form styling */
+.form-outline input {
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-outline input:focus {
+  box-shadow: none;
+  border-color: #fff;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Animation and positioning */
+.card-body {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.col-md-3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.col-md-3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col-md-4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.col-md-4 label {
+  color: red;
+}
+
+/* Responsive layout */
+@media (max-width: 576px) {
+  .col-12,
+  .col-md-8,
+  .col-lg-6,
+  .col-xl-5 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .col-12,
+  .col-md-8,
+  .col-lg-6,
+  .col-xl-5 {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-12,
+  .col-md-8,
+  .col-lg-6,
+  .col-xl-5 {
+    width: 60%;
+  }
+}

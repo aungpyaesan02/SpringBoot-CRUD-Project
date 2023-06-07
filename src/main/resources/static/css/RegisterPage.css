@@ -1,0 +1,122 @@
+/* Body background */
+body {
+  background-color: #f8f8f8;
+}
+
+/* Container styling */
+.container {
+  margin-top: 4rem;
+}
+
+/* Register form styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.col-md-3 {
+  margin-top: 1.5rem;
+}
+
+.col-md-3 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.col-md-4 label {
+  color: red;
+}
+
+/* Cute Design */
+
+/* Pastel colors */
+body, .container, .btn-primary {
+  background-color: #f6dada;
+}
+
+.form-control {
+  background-color: #fff;
+  border-color: #f6dada;
+  color: #000;
+  box-shadow: none;
+}
+
+/* Rounded corners */
+.container {
+  border-radius: 1.5rem;
+}
+
+.form-control {
+  border-radius: 0.8rem;
+}
+
+.btn-primary {
+  border-radius: 0.8rem;
+}
+
+/* Cute font */
+h1, h2 {
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Heart animation */
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1::before {
+  content: '\2665';
+  animation: beat 1s infinite;
+  display: inline-block;
+  transform-origin: center;
+  margin-right: 0.2rem;
+}
+
+/* Responsive layout */
+@media (max-width: 576px) {
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-8 {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-8 {
+    width: 60%;
+  }
+}

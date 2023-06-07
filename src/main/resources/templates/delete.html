@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Delete</title>
+<!-- css -->
+<Link rel="stylesheet" href="/css/bootstrap.min.css" />
+<!-- js -->
+<script src="/js/bootstrap.min.css"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<form th:action="@{/delete}" th:object="${user}" method="post">
+
+			<br /> <br />
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h1>Delete Form</h1>
+				</div>
+
+				<div class="col-md-2"></div>
+
+			</div>
+			<!-- Name -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label for="id_name" class="form-label">User NAME</label> <a
+							th:text="${user.name}"></a>
+					</div>
+
+				</div>
+				<div class="col-md-2"></div>
+
+			</div>
+
+			<!-- Email -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="form-group">
+							<label for="id_email" class="form-label">Email</label> <a
+							th:text="${user.email}"></a>
+					</div>
+
+				</div>
+				<div class="col-md-2"></div>
+
+			</div>
+
+			<!-- password -->
+			<input type="hidden" class="form-control" id="id_password"
+				th:field="*{password}" required>
+			<!-- id -->
+			<input type="hidden" class="form-control" id="id_id" th:field="*{id}"
+				required>
+
+			<!-- Phone Number -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label for="id_phono" class="form-label">Phone Number</label> <a
+							th:text="${user.phno}"></a>
+					</div>
+
+				</div>
+				<div class="col-md-2"></div>
+
+			</div>
+
+			<br />
+
+			<!-- Button -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-3">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+
+</body>
+</html>
